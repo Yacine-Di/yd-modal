@@ -53,17 +53,18 @@ export default App;
 
 
 | Prop name | Type | Default | Description |
-| ------------- | ------------- | ------------- |
-| isOpen  | bool  | Content Cell  |
-| setIsModalOpen   | func  | Content Cell  |
-| modalMsg  | string  | Content Cell  |
-| modalStyle   | object  | Content Cell  |
-
-|Prop name| Type | Default | Description |
 |----|----|----|----|
-|isOpen|bool|blabla|blabla|
-|setIsModalOpen|func|blabla|blabla|
-|modalMsg|string|blabla|blabla|
-|modalStyle|object|blabla|blabla|
+| isOpen|bool | false | Check if modal is open or closed, must be declare and initilised out of the modal |
+| setIsModalOpen |func| none |Callback to toggle isOpen,  must be declare and initilised out of the modal |
+| modalMsg | string | empty string | Message displayed in the modal |
+| modalStyle | object | default style inside the package|Object containing diffrents configurable styles for the modal (details below) |
+
+### Structure of the object `modalStyle`
+
+The prop `modalStyle` allows to personalise some style of the modal. Here are the options and how to use them
+
+|Key|Type|Description|
+|----|----|----|
+
 
 ## Contributing
