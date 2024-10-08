@@ -59,8 +59,11 @@ export default App;
 | modalMsg  | string  | Content Cell  |
 | modalStyle   | object  | Content Cell  |
 
-|Test| Test | Test | Test |
-|----|----|
-|blabla|blabla|
+|Prop name| Type | Default | Description |
+|----|----|----|----|
+|isOpen|bool|blabla|blabla|
+|setIsModalOpen|func|blabla|blabla|
+|modalMsg|string|blabla|blabla|
+|modalStyle|object|blabla|blabla|
 
 ## Contributing
