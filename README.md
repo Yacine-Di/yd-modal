@@ -51,6 +51,7 @@ export default App;
 
 ## Props
 
+
 | Prop name | Type | Default | Description |
 | ------------- | ------------- | ------------- |
 | isOpen  | bool  | Content Cell  |
@@ -58,7 +59,7 @@ export default App;
 | modalMsg  | string  | Content Cell  |
 | modalStyle   | object  | Content Cell  |
 
-|Test| Test |
+|Test| Test | Test | Test |
 |----|----|
 |blabla|blabla|
 
