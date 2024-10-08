@@ -2,9 +2,13 @@
 
 Yd-modal is a simple Modal with some configurable features
  
- ## Install
+## Link to the package
 
- Use the package manage npm to install Yd-modal
+[yd-modal](https://github.com/Yacine-Di/yd-modal)
+
+## Install
+
+Use the package manage npm to install Yd-modal
 
 ```bash
 npm i yd-modal
@@ -16,7 +20,7 @@ npm i yd-modal
 import React, { useState } from 'react';
 import Modal from 'yd-modal';
 
-const App = () => {
+const MyComponent = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const modalMsg = 'This is a customizable modal message.';
   const modalStyles = {
@@ -45,7 +49,7 @@ const App = () => {
   );
 };
 
-export default App;
+export default MyComponent;
 
 ```
 
@@ -77,4 +81,35 @@ The prop `modalStyle` allows to personalise some style of the modal. Here are th
 | `buttonColor` | `string` | Backgroud color of the close button, must use rgb to work (ex: `'rgb(33, 136, 56)'`) |
 | `buttonColorHovered` | `string` | Backgroud color of the close button when hovered, must use rgba to work (ex: `'rgba(33, 136, 56, 0.8)'`) |
 
+## Style 
+
+The component uses a combination of default styles in `index.scss` and inline css with `modalStyle`. To personalise or override the component you can :
+ * Change default style in `index.scss`.
+ * Use your own values with the prop `modalStyle`
+
+### Exemple d'object `modalStyle`
+
+```js
+  const modalStyles = {
+    blockerBackgroundColor: 'rgba(0,0,0,0.75)',
+    modalWidth: 'clamp(500px, 90% , 100px)',
+    textColor: '#000',
+    textAlign: 'center',
+    fontFamily: 'Inter, system-ui, Avenir, Helvetica, Arial, sans-serif',
+    msgFontWeight: '800',
+    borderColorAnimation: 'rgba(54, 121, 184, 0.5)',
+    lineColorAnimation: 'rgb(54, 121, 184)',
+    buttonColor: 'rgb(54, 121, 184)',
+    buttonColorHovered: 'rgba(54, 121, 184, 0.5)',
+  };
+```
+
 ## Contributing
+
+## Author
+
+[Yacine D](https://github.com/Yacine-Di)
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
