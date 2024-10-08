@@ -49,7 +49,7 @@ export default App;
 
 ```
 
-# Props
+## Props
 
 | Prop name | Type | Default | Description |
 | ------------- | ------------- | ------------- |
@@ -58,5 +58,8 @@ export default App;
 | modalMsg  | string  | Content Cell  |
 | modalStyle   | object  | Content Cell  |
 
+|Test| Test |
+|----|----|
+|blabla|blabla|
 
 ## Contributing
