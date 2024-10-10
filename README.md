@@ -1,6 +1,9 @@
 # yd-modal
 
-Yd-modal is a simple Modal with some configurable features
+## Introduction
+
+yd-modal is a simple modal with some configurable style features.
+The main purpose of this modal is to tell the user that his submit is ok.
  
 ## Link to the package
 
@@ -23,7 +26,7 @@ import Modal from 'yd-modal';
 const MyComponent = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const modalMsg = 'This is a customizable modal message.';
-  const modalStyles = {
+  const modalStyle = {
     blockerBackgroundColor: 'rgba(0,0,0,0.75)',
     modalWidth: 'clamp(500px, 90% , 100px)',
     textColor: '#000',
@@ -43,7 +46,7 @@ const MyComponent = () => {
         isOpen={isModalOpen}
         setIsModalOpen={setIsModalOpen}
         modalMsg={modalMsg}
-        modalStyle={modalStyles}
+        modalStyle={modalStyle}
       />
     </div>
   );
@@ -90,7 +93,7 @@ The component uses a combination of default styles in `index.scss` and inline cs
 ### Exemple d'object `modalStyle`
 
 ```js
-  const modalStyles = {
+  const modalStyle = {
     blockerBackgroundColor: 'rgba(0,0,0,0.75)',
     modalWidth: 'clamp(500px, 90% , 100px)',
     textColor: '#000',
@@ -104,12 +107,18 @@ The component uses a combination of default styles in `index.scss` and inline cs
   };
 ```
 
-## Contributing
+## Version
 
-## Author
+1.0.0
 
-[Yacine D](https://github.com/Yacine-Di)
+## Keywords
+
+React, Modal, Customizable, Component, UI
 
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
+## Author
+
+[Yacine D](https://github.com/Yacine-Di)

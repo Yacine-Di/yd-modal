@@ -1,0 +1,31 @@
+{
+  "name": "yd-modal",
+  "version": "1.0.0",
+  "description": "yd-modal is a simple modal with some configurable style features.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yacine-Di/yd-modal.git"
+  },
+  "keywords": [
+    "React",
+    "Modal",
+    "Customizable",
+    "Component",
+    "UI"
+  ],
+  "author": "Yacine D",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Yacine-Di/yd-modal/issues"
+  },
+  "homepage": "https://github.com/Yacine-Di/yd-modal#readme",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2"
+  }
+}
