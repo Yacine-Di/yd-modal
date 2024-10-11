@@ -2,7 +2,7 @@
  * yd-modal is a simple modal with some configurable style features.
  * 
  * @author Yacine
- * @version 1.0.1
+ * @version 1.0.2
  */
 
 import { useState } from 'react'
