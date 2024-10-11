@@ -2,10 +2,11 @@
  * yd-modal is a simple modal with some configurable style features.
  * 
  * @author Yacine
- * @version 1.0.0
+ * @version 1.0.1
  */
 
 import { useState } from 'react'
+import PropTypes from 'prop-types'
 import closeIcon from './assets/cross-icon.png'
 import './index.css'
 
@@ -96,3 +97,22 @@ function Modal({ isOpen, setIsModalOpen, modalMsg, modalStyle }) {
 }
 
 export default Modal
+
+Modal.propTypes = {
+    isOpen: PropTypes.bool.isRequired,
+    setIsModalOpen: PropTypes.func.isRequired,
+    modalMsg: PropTypes.string.isRequired,
+    modalStyle: PropTypes.shape({
+        blockerBackgroundColor: PropTypes.string.isRequired,
+        modalWidth: PropTypes.string.isRequired,
+        textColor: PropTypes.string.isRequired,
+        textAlign: PropTypes.string.isRequired,
+        fontFamily: PropTypes.string.isRequired,
+        msgFontWeight: PropTypes.string.isRequired,
+        borderColorAnimation: PropTypes.string.isRequired,
+        lineColorAnimation: PropTypes.string.isRequired,
+        buttonFontWeight: PropTypes.string.isRequired,
+        buttonBgColor: PropTypes.string.isRequired,
+        buttonBgColorHovered: PropTypes.string.isRequired,
+    }).isRequired,
+};
