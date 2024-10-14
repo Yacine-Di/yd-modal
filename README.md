@@ -64,7 +64,7 @@ export default MyComponent;
 | `isOpen`|`bool` | `false` | Check if modal is open or closed, must be declare and initilised out of the modal |
 | `setIsModalOpen` |`func`|  | Callback to toggle isOpen,  must be declare and initilised out of the modal |
 | `modalMsg` | `string` | `''` | Message displayed in the modal |
-| `modalStyle` | `object` | default style inside the package into `index.scss` file|Object containing diffrents configurable styles for the modal (details below) |
+| `modalStyle` | `object` | default style inside the package into `index.css` file|Object containing diffrents configurable styles for the modal (details below) |
 
 ### Structure of the object `modalStyle`
 
@@ -86,8 +86,8 @@ The prop `modalStyle` allows to personalise some style of the modal. Here are th
 
 ## Style 
 
-The component uses a combination of default styles in `index.scss` and inline css with `modalStyle`. To personalise or override the component you can :
- * Change default style in `index.scss`.
+The component uses a combination of default styles in `index.css` and inline css with `modalStyle`. To personalise or override the component you can :
+ * Change default style in `index.css`.
  * Use your own values with the prop `modalStyle`
 
 ### Exemple d'object `modalStyle`
