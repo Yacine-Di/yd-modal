@@ -109,15 +109,11 @@ The component uses a combination of default styles in `index.scss` and inline cs
 
 ## Version
 
-1.0.0
+1.0.3
 
 ## Keywords
 
 React, Modal, Customizable, Component, UI
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
 
 ## Author
 
