@@ -30,9 +30,11 @@ function Modal({ isOpen, setIsModalOpen, modalMsg, modalStyle }) {
         <div
             className="blocker"
             onClick={handleCloseClick}
-            style={{ backgroundColor: modalStyle.blockerBackgroundColor }}
+            style={{
+                backgroundColor: modalStyle?.blockerBackgroundColor || undefined,
+            }}
         >
-            <div className="modal" style={{ width: modalStyle.modalWidth }}>
+            <div className="modal" style={{ width: modalStyle?.modalWidth || undefined }}>
                 <img
                     className="close-modal"
                     src={closeIcon}
@@ -42,10 +44,10 @@ function Modal({ isOpen, setIsModalOpen, modalMsg, modalStyle }) {
                 <div
                     className="message"
                     style={{
-                        color: modalStyle.textColor,
-                        textAlign: modalStyle.textAlign,
-                        fontFamily: modalStyle.fontFamily,
-                        fontWeight: modalStyle.msgFontWeight,
+                        color: modalStyle?.textColor || undefined,
+                        textAlign: modalStyle?.textAlign || undefined,
+                        fontFamily: modalStyle?.fontFamily || undefined,
+                        fontWeight: modalStyle?.msgFontWeight || undefined,
                     }}
                 >
                     {modalMsg}
@@ -53,24 +55,26 @@ function Modal({ isOpen, setIsModalOpen, modalMsg, modalStyle }) {
                 <div className="success-checkmark">
                     <div
                         className="check-icon"
-                        style={{ borderColor: modalStyle.borderColorAnimation }}
+                        style={{
+                            borderColor: modalStyle?.borderColorAnimation || undefined,
+                        }}
                     >
                         <span
                             className="icon-line line-tip"
                             style={{
-                                backgroundColor: modalStyle.lineColorAnimation,
+                                backgroundColor: modalStyle?.lineColorAnimation || undefined,
                             }}
                         ></span>
                         <span
                             className="icon-line line-long"
                             style={{
-                                backgroundColor: modalStyle.lineColorAnimation,
+                                backgroundColor: modalStyle?.lineColorAnimation || undefined,
                             }}
                         ></span>
                         <div
                             className="icon-circle"
                             style={{
-                                borderColor: modalStyle.borderColorAnimation,
+                                borderColor: modalStyle?.borderColorAnimation || undefined,
                             }}
                         ></div>
                         <div className="icon-fix"></div>
@@ -82,11 +86,11 @@ function Modal({ isOpen, setIsModalOpen, modalMsg, modalStyle }) {
                     onMouseEnter={() => setButHovered(true)}
                     onMouseLeave={() => setButHovered(false)}
                     style={{
-                        fontFamily: modalStyle.fontFamily,
-                        fontWeight: modalStyle.buttonFontWeight,
+                        fontFamily: modalStyle?.fontFamily || undefined,
+                        fontWeight: modalStyle?.buttonFontWeight || undefined,
                         backgroundColor: isButHovered
-                            ? modalStyle.buttonBgColorHovered
-                            : modalStyle.buttonBgColor,
+                            ? modalStyle?.buttonBgColorHovered || undefined
+                            : modalStyle?.buttonBgColor || undefined,
                     }}
                 >
                     Close
